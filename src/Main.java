@@ -1,3 +1,8 @@
+/**
+ * @author Daniel Russell
+ * This is a checkers app 8 red and 8 black checker objects are created then the user is asked to select them and move around on the checker board
+ * 
+ */
 import java.util.Scanner;
 
 public class Main {
@@ -6,12 +11,14 @@ public class Main {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		
-		int x = 0;
-		int y = 0;
+		int x = 0;//holds x value for board move
+		int y = 0;//holds y value for board move
 		
+		//initializes the Checker Board
 		Board.buildBoard();
 		Board.redrawBoard();
 		
+		//Creates the red side of checkers on the board
 		Checkers red1 = new Checkers("red","1", 6,1);
 		Checkers red2 = new Checkers("red","2", 6,3);
 		Checkers red3 = new Checkers("red","3", 6,5);
@@ -21,6 +28,7 @@ public class Main {
 		Checkers red7 = new Checkers("red","7", 7,4);
 		Checkers red8 = new Checkers("red","8", 7,6);
 		
+		//creates the black side of heckers on the board
 		Checkers black1 = new Checkers("black","1", 0,1);
 		Checkers black2 = new Checkers("black","2", 0,3);
 		Checkers black3 = new Checkers("black","3", 0,5);
@@ -30,8 +38,9 @@ public class Main {
 		Checkers black7 = new Checkers("black","7", 1,4);
 		Checkers black8 = new Checkers("black","8", 1,6);
 
+		
 		Scanner key = new Scanner(System.in);
-		String choice;
+		String choice;//holds the selected checker name red is "r" black is "b" and then num 1-8 ex. "r1" moves red checker object one
 		
 		do {
 			System.out.println("Blacks turn:\nBlack select checker to move(b1,b2...):");
