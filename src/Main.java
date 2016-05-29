@@ -1,6 +1,9 @@
 /**
  * @author Daniel Russell
+<<<<<<< HEAD
 * test comment
+=======
+>>>>>>> 70ba18554d23fb082bdc2691262de147ed745488
  * This is a checkers app 8 red and 8 black checker objects are created then the user is asked to select them and move around on the checker board
  * 
  */
@@ -9,7 +12,11 @@ import java.util.Scanner;
 public class Main {
 	
 	
+<<<<<<< HEAD
 
+=======
+	@SuppressWarnings("resource")
+>>>>>>> 70ba18554d23fb082bdc2691262de147ed745488
 	public static void main(String[] args) {
 		
 		int x = 0;//holds x value for board move
