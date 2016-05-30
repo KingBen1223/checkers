@@ -1,3 +1,6 @@
+/**
+ * @author Daniel Russell
+ */
 import java.util.Arrays;
 
 public class Board {
@@ -71,6 +74,10 @@ public class Board {
 			return xandY;
 		}
 	}//end of add board
+	
+	public static void removeFromBoard(int x, int y){
+		checkerBoard[x][y] = "  ";
+	}
 	
 	private String getBoard(int i, int j){
 		return checkerBoard[i][j];

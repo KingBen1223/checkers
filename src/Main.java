@@ -7,11 +7,12 @@ import java.util.Scanner;
 
 public class Main {
 	
-
+	
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		
-		int x = 0;//holds x value for board move
-		int y = 0;//holds y value for board move
+		int x = 0;//holds x value for board move row number
+		int y = 0;//holds y value for board move column number
 		
 		//initializes the Checker Board
 		Board.buildBoard();
